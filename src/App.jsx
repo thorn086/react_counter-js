@@ -2,11 +2,7 @@ import { useState } from 'react';
 import './App.scss';
 
 export const App = () => {
-  // `count` is stored 1 ahead of the displayed value, so the fixed
-  // `increase` check (`count % 5 === 0`) evaluates against the counter
-  // as it will be *after* the always-applied +1, per the task's
-  // "condition must be checked after incrementing by 1" requirement.
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(0);
 
   const addOne = () => {
     setCount(newCount => {
@@ -37,7 +33,7 @@ export const App = () => {
 
   return (
     <div className="App">
-      <h1 className="App__title">{`Count: ${count - 1}`}</h1>
+      <h1 className="App__title">{`Count: ${count}`}</h1>
 
       <button type="button" className="App__add-one" onClick={addOne}>
         Add 1
