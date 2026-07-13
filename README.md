@@ -34,7 +34,7 @@ Your task is to implement the logic for updating the counter.
 
 ## Important note
 
-* The condition must be checked after incrementing the counter by 1.
+* The condition must be checked before incrementing the counter by 1.
 * The `increase` function is already implemented and must not be changed.
 
 ---
